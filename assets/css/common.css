@@ -1,0 +1,247 @@
+.hangle {font-family:"NanumSquare";font-weight:500;}
+
+.logo {position:relative;display:inline-block;z-index:1;}
+.logo::after, .logo::before {content:"";position:absolute;width:30px;height:10px;background:#54a8c7;z-index:-1;}
+.logo::before {top:3px;left:-10px;}
+.logo::after {bottom:3px;right:-10px;;}
+
+.kbDpsJ {
+    position: fixed;
+    right: 30px;
+    bottom: 160px;
+    min-width: 230px;
+    max-width: 320px;
+    animation: 400ms cubic-bezier(0.36, 0, 0, 1) 0s 1 normal backwards running dWWlnC;
+    z-index:4;
+}
+
+.gcPqyR {
+    position: relative;
+}
+
+.kdbiBm {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 14px 62px 14px 14px;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 0px 2px 0px inset, rgba(0, 0, 0, 0.05) 0px 0px 2px 1px, rgba(0, 0, 0, 0.15) 0px 4px 12px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.iOwXlC {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    gap: 2px;
+    max-width: 100%;
+    padding: 1px 2px;
+    overflow: hidden;
+}
+
+.kqRZza {
+    overflow: hidden;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.jOeHgT {
+    display: flex;
+    column-gap: 4px;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size:14px;
+}
+
+.iCEngM {
+    flex: 0 0 auto;
+    margin: 0px;
+    color: rgb(49, 165, 82);
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
+    transition-duration: 150ms;
+    transition-property: color;
+}
+
+.imEiwF {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.a11y-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+}
+
+.flvCTH {
+    padding: 4px;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    display:flex;
+}
+
+.dVEMjZ {
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    color: inherit;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.bKNCWH {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    overflow: initial;
+    cursor: pointer;
+    backdrop-filter: blur(30px);
+    border-radius: 24px;
+    will-change: transform, opacity;
+    transition: transform 400ms cubic-bezier(0.36, 0, 0, 1) 10ms, box-shadow 200ms ease-out 0s;
+    animation: 400ms cubic-bezier(0.36, 0, 0, 1) 0s 1 normal backwards running bBWrYX;
+}
+
+.bKNCWH:hover {box-shadow:rgba(0, 0, 0, 0.1) 0px 8px 30px 0px}
+
+
+.omWkp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    visibility: visible;
+    transition: visibility 400ms ease 0s;
+    animation: 400ms cubic-bezier(0.36, 0, 0, 1) 0s 1 normal both running jBcSpD;
+}
+
+.LVsny {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url("../img/tele_logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 18px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.15) 0px 8px 30px;
+}
+
+.jaYpSL {
+    position: absolute;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: 24px;
+    transition: visibility 400ms ease 0s;
+    animation: 400ms cubic-bezier(0.36, 0, 0, 1) 0s 1 normal both running jiroXv;
+    background: linear-gradient(rgb(104, 97, 236) 0%, rgb(127, 97, 236) 100%);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.15) 0px 8px 30px;
+}
+
+.aSXzX {
+    position: absolute;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    will-change: opacity, visibility;
+    visibility: hidden;
+    background-color: rgba(247, 247, 248, 0.9);
+    border-radius: 24px;
+    transition: visibility 400ms ease 0s;
+    animation: 400ms cubic-bezier(0.36, 0, 0, 1) 0s 1 normal both running jiroXv;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.15) 0px 8px 30px;
+}
+
+.pJGcx {
+    flex: 0 0 auto;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.6);
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
+    transition-duration: 150ms;
+    transition-property: color;
+}
+
+.fhSQvV {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    bottom: 90px;
+    right: 30px;
+}
+
+button {
+    box-sizing: border-box;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    overflow: visible;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: inherit;
+    font-optical-sizing: inherit;
+    font-kerning: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-family: NotoSansKR, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "맑은 고딕", "Segoe UI", Roboto, "system-ui", "sans-serif";
+    line-height: inherit;
+    color: inherit;
+    text-shadow: transparent 0px 0px 0px;
+    letter-spacing: inherit;
+    background: transparent;
+    border: 0px solid transparent;
+    box-shadow: transparent 0px 0px 0px;
+}
+
+@media screen and (max-width:992px) {
+    .text-nowrap {white-space:normal !important;}
+}
+
+.dropdown-item {font-size:17px;}
+.text-left {text-align:left !important;}
