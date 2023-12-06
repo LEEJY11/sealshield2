@@ -15,9 +15,38 @@
   <link rel="preload" href="./assets/css/fonts/thicccboi.css" as="style" onload="this.rel='stylesheet'">
   <link rel="stylesheet" href="https://webfontworld.github.io/naver/NanumSquare.css">
   <link rel="stylesheet" href="./assets/css/common.css">
+
+  <script type="text/javascript">
+		const getCookie = (name) => {
+			const value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+			return value ? value[2] : null;
+		}
+
+		const closeModal = () => {
+			const banner = document.getElementById('banner');
+			banner.style.display = "none"
+		}
+
+		const closeModalDuringOneday = () => {
+			let date = new Date(Date.now() + 86400e3);
+			date = date.toUTCString();
+			document.cookie = `bannerClose=T; expires=${date}`
+			closeModal();
+		}
+
+		function setBanner (){
+			const banner = document.getElementById('banner');
+			if (getCookie('bannerClose') == null) {
+				banner.className += " display-flex";
+			} else if(getCookie("bannerClose") == "T") {
+				closeModal();
+			};
+		}
+	</script>
+
 </head>
 
-<body>
+<body onload="setBanner();">
   <div class="content-wrapper">
     <header class="wrapper bg-dark">
       <nav class="navbar navbar-expand-lg center-nav transparent navbar-dark">
@@ -142,7 +171,7 @@
           <div class="navbar-other w-100 d-flex ms-auto">
             <ul class="navbar-nav flex-row align-items-center ms-auto">
               <li class="nav-item d-none d-md-block">
-                <a href="/contact.html" class="btn btn-sm btn-primary rounded hangle">영업문의</a>
+                <a href="./pages/contact.html" class="btn btn-sm btn-primary rounded hangle">영업문의</a>
               </li>
               <li class="nav-item d-lg-none">
                 <button class="hamburger offcanvas-nav-btn"><span></span></button>
@@ -168,6 +197,15 @@
       <!-- /.offcanvas -->
     </header>
     <!-- /header -->
+    <div id="banner" class="banner-wrap">
+			<div class="banner-inner">
+				<img src="../assets/img/banner.jpg" alt="배너 이미지">
+				<ul class="banner-footer">
+					<li onclick="closeModalDuringOneday();"><span>X</span>24시간동안 보지않기</li>
+					<li onclick="closeModal();"><span>X</span>닫기</li>
+				</ul>
+			</div>
+		</div>
     <section class="wrapper bg-dark angled lower-start">
 			<div class="container pt-7 pt-md-11 pb-8">
 			  <div class="row gx-0 gy-10 align-items-center">
@@ -176,7 +214,7 @@
 				  <p class="lead fs-24 lh-sm text-white mb-7 hangle">쉽고 간편한 디도스 보안을 다양한 상품과 함께
 					이용할 수 있습니다.</p>
 				  <div>
-					<a class="btn btn-lg btn-primary rounded hangle">더 알아보기</a>
+					<!-- <a class="btn btn-lg btn-primary rounded hangle">더 알아보기</a> -->
 				  </div>
 				</div>
 				<!-- /column -->
@@ -202,7 +240,7 @@
                 <div class="icon btn btn-block btn-lg btn-soft-primary pe-none mb-6"> <i class="uil uil-server"></i> </div>
               <h4 class="hangle">가상 서버</h4>
               <p class="mb-3 hangle">Cloudflare Enterprise Spectrum 204Tbps+ 방어서비스를 제공하고, 성능확장이 자유롭고 가성비좋게 이용할 수 있는 서비스입니다.</p>
-              <a href="#" class="more hover link-primary hangle">더 알아보기</a>
+              <a href="./pages/virtualServer.html" class="more hover link-primary hangle">더 알아보기</a>
             </div>
           </div>
         </div>
@@ -213,7 +251,7 @@
               <div class="icon btn btn-block btn-lg btn-soft-primary pe-none mb-6"> <i class="uil uil-server-network"></i> </div>
               <h4 class="hangle">단독 서버</h4>
               <p class="mb-3 hangle">Cloudflare Enterprise Spectrum 204Tbps+ 방어서비스를 제공하고 고성능 CPU와 Nvme SSD로 구성된 서버를 제공합니다.</p>
-              <a href="#" class="more hover link-primary hangle">더 알아보기</a>
+              <a href="./pages/dedicatedServer.html" class="more hover link-primary hangle">더 알아보기</a>
             </div>
           </div>
         </div>
@@ -224,7 +262,7 @@
               <div class="icon btn btn-block btn-lg btn-soft-primary pe-none mb-6"> <i class="uil uil-shield-check"></i> </div>
               <h4 class="hangle">우회 방어 회선 연동</h4>
               <p class="mb-3 hangle">클라우드플레어 스펙트럼 서비스를 통해, AnyCast 기반 204Tbps+ 회선을 집,사무실 등 서버가 있는곳에 회선만 연동해서 방어서비스를 제공합니다.</p>
-              <a href="#" class="more hover link-primary hangle">더 알아보기</a>
+              <a href="./pages/bypassDefense.html" class="more hover link-primary hangle">더 알아보기</a>
             </div>
           </div>
         </div>
@@ -235,7 +273,7 @@
               <div class="icon btn btn-block btn-lg btn-soft-primary pe-none mb-6"> <i class="uil uil-server-connection"></i> </div>
               <h4 class="hangle">일본 단독 서버</h4>
               <p class="mb-3 hangle">AWS급 최하단 10G 백본용량으로 디도스방어 서비스를 제공하고, 고성능 하이엔드 급 서버 장비로 물리 단독 서버를 제공합니다.</p>
-              <a href="#" class="more hover link-primary hangle">더 알아보기</a>
+              <a href="./pages/japanDedicatedServer.html" class="more hover link-primary hangle">더 알아보기</a>
             </div>
           </div>
         </div>
@@ -293,8 +331,8 @@
 			<div class="d-md-flex align-items-center justify-content-between">
 				<p class="mb-2 mb-lg-0">© 2023 Seal Shield Inc, All Rights Reserved.</p>
 				<nav class="nav mb-0 hangle">
-				  <a href="/legal/term" style="font-size: .7rem; margin: 0 0.7rem 0 0; color: #60697b;">서비스 이용약관</a>
-				  <a href="/legal/privacy" style="font-size: .7rem; margin: 0 0.7rem 0 0; color: #60697b;">개인정보 처리방침</a>
+				  <a href="./pages/term.html" style="font-size: .7rem; margin: 0 0.7rem 0 0; color: #60697b;">서비스 이용약관</a>
+				  <a href="./pages/privacy.html" style="font-size: .7rem; margin: 0 0.7rem 0 0; color: #60697b;">개인정보 처리방침</a>
 				</nav>
 				<!-- /.social -->
 			  </div>

@@ -245,3 +245,11 @@ button {
 
 .dropdown-item {font-size:17px;}
 .text-left {text-align:left !important;}
+
+.banner-wrap {align-items:center;justify-content:center;position:absolute !important;top:80px;left:150px;display:none;z-index:9;font-family:"NanumSquqre";}
+.banner-inner {background:#000;}
+.banner-footer {margin-bottom:0;color:#fff;width:100%;display:flex;align-items:center;justify-content:flex-end;padding:5px;gap:15px;}
+.banner-footer li {list-style:none;margin-bottom:0;cursor:pointer;display:flex;align-items:center;}
+.banner-footer li > span {border:1px solid #fff;display:inline-block;width:20px;font-size:12px;margin-right:5px;text-align:center;}
+
+.display-flex {display:flex;}
